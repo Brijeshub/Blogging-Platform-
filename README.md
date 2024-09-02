@@ -24,8 +24,8 @@ The project working on is a comprehensive blogging web application developed usi
 ## Rquerment Technology for the Project:
 - Use Appwrite for 'localhost' to store 'database' of the date and front-end use React Js;
 ### Dependencies:
+**Install these dependencies on our system.**
 1. @reduxjs/toolkit
-       
 2. @tinymce/tinymce-react
 3. appwrite
 4. html-react-parser
@@ -33,8 +33,8 @@ The project working on is a comprehensive blogging web application developed usi
 6. react-redux
 7. react-router-dom
 
-**Install these dependencies on our system.**
-
+## Overview of Project Video:
+<video controls src="Untitled video - Made with Clipchamp.mp4" title="Title"></video>
 
 ### Root folder List:
 - **Root_Folder:** appwrite:
