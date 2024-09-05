@@ -36,6 +36,9 @@ The project working on is a comprehensive blogging web application developed usi
 ## Overview of Project Video:
 <video controls src="Untitled video - Made with Clipchamp.mp4" title="Title"></video>
 
+<!-- [![Watch the video]()] -->
+
+
 ### Root folder List:
 - **Root_Folder:** appwrite:
 

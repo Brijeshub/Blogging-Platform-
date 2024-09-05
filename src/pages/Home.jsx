@@ -1,9 +1,7 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import appwriteService from "../appwrite/config";
-import {Container, PostCard} from '../components';
+import { Container, PostCard } from '../components';
 import Technology from './blog_contents/Technology';
-import Trevelling from './blog_contents/Trevelling';
-import Foodies from './blog_contents/Foodies';
 
 function Home() {
     const [posts, setPosts] = useState([])
@@ -15,28 +13,14 @@ function Home() {
             }
         })
     }, [])
-  
+
     if (posts.length === 0) {
         return (
-            <div className="w-full py-8 mt-4 text-left">
-               <div className="flex flex-wrap">
-                         <div className="p-2 w-full">
-                             <h1 className="text-2xl font-bold hover:text-green-500 text-center">
-                                 Login to read Posts & Upload Post
-                             </h1>
-                         </div>
-                   </div>
-               
-                <Container>
-                <Technology/>
-                    {/* <Trevelling/>
-                    <Foodies/> */}
-                </Container>
-            </div>
+           <Technology/>
         )
     }
-               
-           
+
+
     return (
         <div className='w-full py-8'>
             <Container>
