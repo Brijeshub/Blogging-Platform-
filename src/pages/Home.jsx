@@ -3,7 +3,9 @@ import appwriteService from "../appwrite/config";
 import { Container, PostCard } from '../components';
 import Technology from './blog_contents/Technology';
 
+
 function Home() {
+    
     const [posts, setPosts] = useState([])
 
     useEffect(() => {
@@ -17,6 +19,7 @@ function Home() {
     if (posts.length === 0) {
         return (
            <Technology/>
+        // <ImageStore/>
         )
     }
 

@@ -12,10 +12,10 @@ export class AuthService{
             .setProject(conf.appwriteProjectId);
         this.account=new Account(this.client);
     }
-async createAccount({email,password,name}){
+async createAccount({email,password,className}){
     try{
         const userAccount=await this.account.create
-        (ID.unique(),email,password,name)
+        (ID.unique(),email,password,className)
         if(userAccount){
            return this.login({email,password});
         }else{

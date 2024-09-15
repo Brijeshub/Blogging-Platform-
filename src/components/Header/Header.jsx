@@ -10,33 +10,33 @@ function Header() {
 
      const navItems=[
         {
-            name:"Home",
+            className:"Home",
             slug:'/',
             active:true
         },
         {
-            name: "Login",
+            className: "Login",
             slug: "/login",
             active: !authStatus,
         },
         {
-            name: "Signup",
+            className: "Signup",
             slug: "/signup",
             active: !authStatus,
         },
         {
-            name: "All Posts",
+            className: "All Posts",
             slug: "/all-posts",
             active: authStatus,
         },
         {
-            name: "Add Post",
+            className: "Add Post",
             slug: "/add-post",
             active: authStatus,
         },
      ]
   return (
-   <header className='py-5 h-22 shadow bg-gray-800 text-stone-300 font-semibold'>
+   <header className='py-2 w-full bg-gray-800 text-stone-300 font-semibold'>
     <Container>
         <nav className='flex'>
             <div className='mr-4'>
@@ -47,12 +47,12 @@ function Header() {
             <ul className='flex ml-auto'>
                 {navItems.map((item)=>
                 item.active?(
-                    <li key={item.name}>
+                    <li key={item.className}>
                      <button
                      onClick={()=>navigate(item.slug)}
                      className='inline-block px-6 py-2
                      duration-200 hover:bg-blue-500 rounded-full'
-                     > {item.name}
+                     > {item.className}
                      </button>
                     </li>
                 ):null
